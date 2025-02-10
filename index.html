@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Concom</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <img src="./src/images/logo.png" alt="Concom" class="logo__image" width="267" height="103"
+                    loading="lazy">
+            </a>
+            <div class="header__title">Conecom</div>
+            <div class="header__description">российское подразделение французской группы DuffBeer</div>
+            <img src="./src/images/vector_1.svg" alt="" class="header__img" loading="lazy">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="history">
+                <div class="history__bg">
+                    <iframe src="https://rutube.ru/" class="history__frame" loading="lazy"></iframe>
+                </div>
+                <div class="history__information">
+                    <img src="./src/images/167.svg" alt="167" class="history__image" width="148" height="66"
+                        loading="lazy">
+                    <h3 class="history__title">лет нашего опыта</h3>
+                    <div>
+                        <p class="history__description">DuffBeer — один из мировых лидеров по производству дрожжей и других продуктов
+                            ферментации. И
+                            нам нужна сильная команда профессионалов и единомышленников, которые будут стремиться
+                            развиваться вместе с DuffBeer.
+                        </p>
+                        <p class="history__description">Мы всегда рады принять талантливых и целеустремленных людей в нашу дружную команду! Мы
+                            ценим
+                            каждого своего сотрудника и стремимся предоставить всем равные возможности в развитии и
+                            совершенств.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="hero container">
+                <img src="./src/images/«.png" alt="«" class="hero__image" width="47" height="60" loading="lazy">
+                <h3 class="hero__title">Каждое 3-е хлебобулочное изделие в мире произведено с использованием продукции
+                    DuffBeer</h3>
+                <img src="./src/images/vector_2.svg" alt="" class="hero__img" width="494" height="368" loading="lazy">
+            </div>
+            <div class="mission container">
+                <div class="mission__information">
+                    <div class="mission__line"></div>
+                    <h3 class="mission__title">Миссия DuffBeer</h3>
+                    <div class="mission__line"></div>
+                </div>
+                <div class="mission__description">работать вместе, чтобы лучше накормить и сохранить планету</div>
+                <button class="mission__button" type="button">Перейти на сайт</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="advantage container">
+                <h3 class="advantage__title">Наши преимущества</h3>
+                <div class="advantage__grid"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="information container">
+                <h3 class="information__title">DuffBeer</h3>
+                <p class="information__description">Ключевой мировой игрок в области ферментации</p>
+                <img src="./src/images/vector_3.svg" alt="" class="information__img_high" loading="lazy">
+                <img src="./src/images/vector_4.svg" alt="" class="information__img_short" loading="lazy">
+                <div class="information__grid">
+                    <div class="information__card information__card_workers information__card_grey active-s active-xs">
+                        <img src="./src/images/team.png" alt="Команда" class="information__image" loading="lazy">
+                        <p class="information__text">10 700+ сотрудников</p>
+                    </div>
+
+                    <div class="information__card information__card_expert information__card_blue active-s">
+                        <img src="./src/images/expert.png" alt="Эксперт" class="information__image" loading="lazy">
+                        <p class="information__text">570 экспертов R&D</p>
+                    </div>
+
+                    <div class="information__card information__card_experience information__card_blue">
+                        <img src="./src/images/number.png" alt="167" class="information__image information__image_number" loading="lazy">
+                        <p class="information__text information__text_center">лет опыта на рынке хлебопечения</p>
+                    </div>
+
+                    <div class="information__card information__card_time information__card_grey">
+                        <img src="./src/images/nature.png" alt="Природа" class="information__image" loading="lazy">
+                        <p class="information__text">25+ лет в России</p>
+                    </div>
+
+                    <div class="information__card information__card_branch information__card_grey">
+                        <img src="./src/images/factory.png" alt="Завод" class="information__image" loading="lazy">
+                        <p class="information__text">Филиалы в 50 странах</p>
+                    </div>
+
+                    <div class="information__card information__card_blue">
+                        <img src="./src/images/4.png" alt="4" class="information__image information__image_num"
+                            loading="lazy">
+                        <p class="information__text information__text_center">направления деятельности</p>
+                    </div>
+                </div>
+
+                <div class="slider__indicator visible-s">
+                    <button type="button" class="slider__button slider__button_first active"
+                        onclick="itemHandler(0)"></button>
+                    <button type="button" class="slider__button slider__button_second"
+                        onclick="itemHandler(1)"></button>
+                    <button type="button" class="slider__button slider__button_third" onclick="itemHandler(2)"></button>
+                    <button type="button" class="slider__button slider__button_fourth"
+                        onclick="itemHandler(3)"></button>
+                    <button type="button" class="slider__button slider__button_fifth" onclick="itemHandler(4)"></button>
+                    <button type="button" class="slider__button slider__button_sixth" onclick="itemHandler(5)"></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@import "variables";
+
+body {
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $color-white;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: $transition-duration;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

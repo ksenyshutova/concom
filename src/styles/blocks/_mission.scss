@@ -1,0 +1,110 @@
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url('../images/mission.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 437px;
+    gap: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    @include m {
+        height: 461px;
+    }
+
+    @include s {
+        height: 275px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 48px;
+        font-weight: 400;
+
+        @include s {
+            font-size: 30px;
+        }
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+    &__line {
+        display: inline-block;
+        width: 8%;
+        height: 0;
+        border: 3px solid $color-white;
+
+        @include m {
+            width: 10%;
+        }
+    }
+
+    &__information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 93px;
+        gap: 20px;
+        width: 70%;
+
+        @include s {
+            margin-top: 55px;
+        }
+
+        @include xs {
+            margin-top: 27px;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 10px;
+
+        @include m {
+            width: 65%;
+        }
+
+        @include s {
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        @include xs {
+            width: 90%;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: 22px;
+        background-color: $color-white;
+        border: none;
+        color: $color-dark;
+        width: 23%;
+
+        @include m {
+            width: 30%;
+        }
+
+        @include s {
+            padding: 5px;
+            width: 28%;
+        }
+
+        @include xs {
+            width: 70%;
+            padding: 12px;
+        }
+    }
+}

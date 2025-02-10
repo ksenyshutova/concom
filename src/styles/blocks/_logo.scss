@@ -1,0 +1,8 @@
+.logo {
+    &__image {
+        @include s {
+            width: 167px;
+            height: 65px;
+        }
+    }
+}

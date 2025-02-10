@@ -1,0 +1,16 @@
+@import './normalize',
+'./fonts',
+'./media',
+'./variables',
+'./utils',
+'./globals';
+
+@import './blocks/header',
+'./blocks/logo',
+'./blocks/section',
+'./blocks/history',
+'./blocks/hero',
+'./blocks/mission',
+'./blocks/advantage',
+'./blocks/slider',
+'./blocks/information';

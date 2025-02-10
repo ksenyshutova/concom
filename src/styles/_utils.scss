@@ -1,0 +1,48 @@
+@import "variables";
+
+.container {
+  margin: $container-margin;
+  padding: 0 $container-padding-x;
+  box-sizing: border-box;
+
+  @include m {
+    padding: 0 41px;
+  }
+
+  @include xs {
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visible-s {
+  @include s-above {
+    display: none !important;
+  }
+}
+
+.active {
+  &-s {
+    @include xs-above {
+      display: block !important;
+    }
+  }
+
+  &-xs {
+    @include xs {
+      display: block !important;
+    }
+  }
+}

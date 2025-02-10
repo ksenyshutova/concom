@@ -1,0 +1,93 @@
+.history {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 41px;
+
+    @include m {
+        padding: 0 15px;
+    }
+
+    @include s {
+        flex-direction: column-reverse;
+        padding: 0 41px;
+    }
+
+    @include xs {
+        padding: 0 35px;
+    }
+
+    &__bg {
+        background-color: $color-bg;
+        width: 46%;
+        position: relative;
+
+        @include m {
+            width: 44%;
+        }
+
+        @include s {
+            width: 100%;
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+
+        @include s {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-family: Lato;
+        font-size: 18px;
+        color: $color-dark;
+        text-transform: uppercase;
+        margin-top: 26px;
+
+        @include s {
+            font-size: 9px;
+            margin-top: 12px;
+        }
+    }
+
+    &__description {
+        color: $color-light;
+        margin-top: 32px;
+        line-height: 1.55;
+
+        @include s {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    }
+
+    &__image {
+        @include s {
+            width: 71px;
+            height: 31px;
+        }
+    }
+
+    &__frame {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 13%;
+        left: 6%;
+        z-index: 1;
+        width: 100%;
+        height: 365px;
+
+        @include s {
+            position: relative;
+            height: 400px;
+        }
+
+        @include xs {
+            height: 279px;
+        }
+    }
+}

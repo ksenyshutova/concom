@@ -1,0 +1,25 @@
+.slider {
+  &__indicator {
+    position: sticky;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    @include s {
+      width: 100%;
+    }
+  }
+
+  &__button,
+  &__button_s {
+    border-radius: 50px;
+    height: 2px;
+    width: 2px;
+    padding: 0;
+
+    &.active {
+      padding: 0;
+    }
+  }
+}

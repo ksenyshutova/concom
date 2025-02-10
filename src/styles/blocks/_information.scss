@@ -1,0 +1,163 @@
+.information {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: $color-bg;
+    margin-top: 0;
+    padding-bottom: 120px;
+    padding-top: 95px;
+    z-index: 0;
+
+    @include m {
+        padding-top: 72px;
+    }
+
+    @include s {
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+
+    @include xs {
+        padding-bottom: 0;
+    }
+
+    &__title {
+        color: $color-dark;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 400;
+
+        @include s {
+            font-size: 18px;
+        }
+    }
+
+    &__description {
+        color: $color-light;
+        margin: 30px 0 60px 0;
+
+        @include s {
+            font-size: 16px;
+            margin: 21px 0 60px 0;
+        }
+    }
+
+    &__text {
+        height: 54px;
+        text-align: end;
+        padding: 20px;
+
+        @include s {
+            padding: 5px;
+        }
+
+        &_center {
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include s {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+
+        &_number {
+            width: 50%;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        &_num {
+            width: 25%;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+    }
+
+    &__img {
+        z-index: 1;
+
+        &_high {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7%;
+            right: 0;
+
+            @include m {
+                top: 5%;
+                left: 82%;
+            }
+
+            @include s {
+                top: 85%;
+                left: 79%;
+            }
+        }
+
+        &_short {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 46%;
+            left: 0;
+
+            @include s {
+                display: none;
+            }
+        }
+    }
+
+
+    &__card {
+        min-height: 294px;
+        z-index: 2;
+
+        @include s {
+            width: 100%;
+            display: none;
+        }
+
+        &_grey {
+            background-color: $color-card;
+        }
+
+        &_blue {
+            background-color: $color-dark;
+        }
+
+        &_workers {
+            grid-column: 1 / 3;
+        }
+
+        &_expert {
+            grid-column: 3 / 4;
+        }
+
+        &_experience {
+            grid-column: 2 / 3;
+        }
+
+        &_time {
+            grid-column: 3 / 5;
+        }
+
+        &_branch {
+            grid-column: 1 / 3;
+        }
+    }
+}

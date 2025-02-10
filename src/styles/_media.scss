@@ -1,0 +1,73 @@
+$l-above: 1300px; // контейнер 1250px
+$l: 1299px;
+
+$m-above: 1100px; // контейнер 930px
+$m: 1099px;
+
+$s-above: 800px; // контейнер 610px
+$s: 799px;
+
+$xs-above: 500px; // контейнер 290px
+$xs: 499px;
+
+@mixin l-above {
+    @media (min-width: $l-above) {
+        @content;
+    }
+}
+
+@mixin l {
+    @media (max-width: $l) {
+        @content;
+    }
+}
+
+@mixin m-above {
+    @media (min-width: $m-above) {
+        @content;
+    }
+}
+
+@mixin m {
+    @media (max-width: $m) {
+        @content;
+    }
+}
+
+@mixin s-above {
+    @media (min-width: $s-above) {
+        @content;
+    }
+}
+
+@mixin s {
+    @media (max-width: $s) {
+        @content;
+    }
+}
+
+@mixin xs-above {
+    @media (min-width: $xs-above) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            @content;
+        }
+    }
+}

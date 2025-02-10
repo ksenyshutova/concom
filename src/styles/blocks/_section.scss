@@ -1,0 +1,11 @@
+.section {
+    margin-top: 100px;
+
+    @include m {
+        margin-top: 80px;
+    }
+
+    @include xs {
+        margin-top: 50px;
+    }
+}

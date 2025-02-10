@@ -1,0 +1,66 @@
+.hero {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: $color-dark;
+    padding: 97px 94px 94px 59px;
+    margin-bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    height: 252px;
+    gap: 41px;
+
+    @include m {
+        padding: 97px 94px 94px 40px;
+        gap: 39px;
+    }
+
+    @include s {
+        height: 104px;
+        padding: 30px;
+        gap: 18px;
+    }
+
+    @include xs {
+        height: 144px;
+    }
+
+    &__image {
+        @include s {
+            width: 22px;
+            height: 28px;
+        }
+    }
+
+    &__img {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        z-index: 1;
+
+        @include m {
+            left: 80%;
+        }
+    }
+
+    &__title {
+        z-index: 2;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        width: 65%;
+
+        @include m {
+            width: 85%;
+        }
+
+        @include s {
+            font-size: 16px;
+        }
+    }
+}
